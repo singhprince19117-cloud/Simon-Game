@@ -5,6 +5,7 @@ let start = false;
 const body = document.querySelector("body");
 const level = document.querySelector("h2");
 const restartBtn = document.querySelector("#restartBtn");
+const startBtn = document.querySelector("#startBtn");
 
 const boxes = [
     document.querySelector(".small_box_1"),
@@ -119,6 +120,9 @@ boxes.forEach((box, index) => {
 
 // Start game with keypress
 document.addEventListener("keypress", startGame);
+
+// Start game with Start button
+startBtn.addEventListener("click", startGame);
 
 // Restart button
 restartBtn.addEventListener("click", () => {
